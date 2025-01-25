@@ -2,7 +2,22 @@
 
 Test Driven Development (TDD) o desarrollo dirigido por pruebas es una técnica para desarrollar software que consiste en ciclos cortos de código en los que primero escribes una prueba automatizada que falle, después se hace lo mínimo necesario para que pase y finalmente la refactorización.
 
-**Ciclo TTD**
+**Instalación para Vite**
+
+`pnpm add -D jest babel-jest @babel/preset-env @babel/preset-react`
+
+**Configuración de `babel.config.json`**
+
+```json
+{
+  "presets": [
+    ["@babel/preset-env", { "targets": { "esmodules": true } }],
+    ["@babel/preset-react", { "runtime": "automatic" }]
+  ]
+}
+```
+
+### Ciclo TTD
 
 ![alt text](public/image.png)
 
@@ -10,11 +25,28 @@ Test Driven Development (TDD) o desarrollo dirigido por pruebas es una técnica 
 - **Green**: hacer lo mínimo necesario para que la prueba pase
 - **Refactor**: aplicar técnicas de refactorización y buenas prácticas en el código
 
-**Diccionario**
+## Testing Library
+
+**Instalación para Vite**
+
+`pnpm add -D @testing-library/dom @testing-library/react jest-environment-jsdom @testing-library/jest-dom`
+
+**Configuración de `jest.config.js`**
+
+```js
+export default {
+  testEnvironment: 'jest-environment-jsdom'
+}
+```
+
+### Diccionario
 
 - `describe`: agrupador de test
 - `test`: permite ejecutar un test (también se puede llamar `it`)
 - `mock`: objeto simulado que imita el comportamiento de objetos reales, permitiendo probar y validar partes específicas
+- `render`: renderizar un componente de React en un contenedor DOM
+- `screen`: nos permite acceder a los elementos del renderizado (todos aquellas queries que comiencen con `findBy` devuelve una promesa y son utilizados para test asincrónicos)
+- `fireEvent`: permite disparar eventos
 
 **_Créditos_**
 
