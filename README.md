@@ -19,7 +19,7 @@ Test Driven Development (TDD) o desarrollo dirigido por pruebas es una técnica 
 
 ### Ciclo TTD
 
-![alt text](public/image.png)
+![Ciclo TTD](images/image.png)
 
 - **Red**: crear una prueba automatizada que falle
 - **Green**: hacer lo mínimo necesario para que la prueba pase
