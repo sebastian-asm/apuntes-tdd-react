@@ -46,9 +46,11 @@ export default {
 - `mock`: objeto simulado que imita el comportamiento de objetos reales, permitiendo probar y validar partes específicas
 - `render`: renderizar un componente de React en un contenedor DOM
 - `screen`: nos permite acceder a los elementos del renderizado (todos aquellas queries que comiencen con `findBy` devuelve una promesa y son utilizados para test asincrónicos)
-- `fireEvent`: permite disparar eventos
+- `fireEvent`: permite disparar eventos del DOM
+  - `user-event`: librería que permite englobal múltiples eventos de fireEvent para ejecutarlos a la misma vez `pnpm add @testing-library/user-event`v
 
 **_Créditos_**
 
 👉 [https://www.udemy.com/course/tdd-react-js/](https://www.udemy.com/course/tdd-react-js/)  
-👉 [https://developero.io/blog/test-driven-development](https://developero.io/blog/test-driven-development)
+👉 [https://developero.io/blog/test-driven-development](https://developero.io/blog/test-driven-development)  
+👉 Configuración de Jest + TS en Vite: [https://medium.com/@vitor.vicen.te/setting-up-jest-js-for-a-vite-ts-js-react-project-the-ultimate-guide-7816f4c8b738](https://medium.com/@vitor.vicen.te/setting-up-jest-js-for-a-vite-ts-js-react-project-the-ultimate-guide-7816f4c8b738)
