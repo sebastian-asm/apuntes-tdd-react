@@ -47,7 +47,8 @@ export default {
 - `render`: renderizar un componente de React en un contenedor DOM
 - `screen`: nos permite acceder a los elementos del renderizado (todos aquellas queries que comiencen con `findBy` devuelve una promesa y son utilizados para test asincrónicos)
 - `fireEvent`: permite disparar eventos del DOM
-  - `user-event`: librería que permite englobal múltiples eventos de fireEvent para ejecutarlos a la misma vez `pnpm add @testing-library/user-event`v
+  - `user-event`: librería que permite englobal múltiples eventos de fireEvent para ejecutarlos a la misma vez `pnpm add @testing-library/user-event`
+- `waitFor`: esperar a que ciertas condiciones se cumplan en pruebas asíncronicas
 
 **_Créditos_**
 
